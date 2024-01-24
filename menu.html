@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> The Haukai Restaurant - Menu </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/my-css.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="row">
+      <div class="header">
+        <br>1 Island St
+        <br>Kerikeri, Bay of Islands
+        <br><a class="hyperlink" href="tel:094014019" aria-label="Phone number"> &#9742;Ph: 09 401 4019 </a>
+        <br><a class="hyperlink" href="mailto:Haukai@nomail.com" aria-label="email address"> &#9993; Haukai@nomail.com
+        </a>
+      </div>
+      <div class="header" role="banner" aria-label="Logo for The Haukai Restaurant">
+        <img class="logo" src="images/Logo2.png" alt="Logo for The Haukai Restaurant">
+      </div>
+      <div class="header">
+        <a class="hyperlink" href="reservations.html" title="Click here to book now">
+          <h2>Click here to book now!</h2>
+        </a>
+      </div>
+    </div>
+  </header>
+  <nav class="navigation" aria-label="navigation bar">
+    <div class="w3-bar w3-blue-grey w3-card-4 w3-padding-15">
+      <a href="index.html" title="Home page" class="w3-bar-item w3-button w3-hide-small">Home</a>
+      <a href="menu.html" title="Menu page" class="w3-bar-item w3-button w3-hide-small">Menu</a>
+      <a href="hours.html" title="Hours page" class="w3-bar-item w3-button w3-hide-small">Hours</a>
+      <a href="reservations.html" title="Reservation page" class="w3-bar-item w3-button w3-hide-small">Reservations</a>
+      <a href="contactUs.html" title="Contact Us page" class="w3-bar-item w3-button w3-hide-small">Contact Us</a>
+      <a href="javascript:void(0)" title="Navigation menu"
+        class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </div>
+    <div id="hideMenu" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+      <a href="index.html" title="Home page" class="w3-bar-item w3-button w3-padding-16">Home</a>
+      <a href="menu.html" title="Menu page" class="w3-bar-item w3-button w3-padding-16">Menu</a>
+      <a href="hours.html" title="Hours page" class="w3-bar-item w3-button w3-padding-16">Hours</a>
+      <a href="reservations.html" title="Reservation page" class="w3-bar-item w3-button w3-padding-16">Reservations</a>
+      <a href="contactUs.html" title="Contact us page" class="w3-bar-item w3-button w3-padding-16">Contact Us</a>
+    </div>
+  </nav>
+  <main>
+    <div class="row">
+      <div class="columnMenu" role="contentinfo" aria-label="image of item from the menu" tabindex="0">
+        <img src="images/food2.jpg" class="pictureMain" alt="image of item from the menu">
+      </div>
+      <div class="columnMenu">
+        <h1>Menu</h1>
+        <p class="mainFont" aria-label="Restaurant Menu" tabindex="0"></p> Click below to download our menu
+        <br>
+        <br>
+        <a class="hyperlink" href="menu/menu.pdf" download aria-label="click below to download the menu">
+          <h2> Download Menu </h2>
+        </a>
+        <br>
+      </div>
+      <div class="columnMenu" role="contentinfo" aria-label="image of item from the menu" tabindex="0">
+        <img src="images/food3.jpg" class="pictureMain" alt="image of item from the menu">
+      </div>
+    </div>
+    <div class="row2">
+      <div class="columnMenu" role="contentinfo" aria-label="image of item from the menu" tabindex="0">
+        <img src="images/drink1.jpg" class="pictureMain" alt="image of item from the menu">
+      </div>
+      <div class="columnMenu" role="contentinfo" aria-label="image of patron enjoying their experience" tabindex="0">
+        <img src="images/patron1.jpg" class="pictureMain" alt="image of patron enjoying their experience">
+      </div>
+      <div class="columnMenu" role="contentinfo" aria-label="image of item from the menu" tabindex="0">
+        <img src="images/dessert1.jpg" class="pictureMain" alt="image of item from the menu">
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div>©Copyright 2024 by The Haukai Restaurant. All rights reserved.</div>
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hideMenu");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+
+</html>
